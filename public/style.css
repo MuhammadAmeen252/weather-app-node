@@ -1,0 +1,73 @@
+h1,h2{
+font-size: 40px;
+margin-left: 5%;
+color:  rgb(6, 6, 36);
+}
+#weatherImg{
+    margin-top: 0%;
+    width: 500px;
+    height: 200px;
+    
+}
+#MyPic{
+margin: 7%;
+height: 25%;
+width: 25%;
+
+}
+a{
+    margin-left: 2%;
+    font-size: larger;
+    text-decoration: none;
+    padding: 1%;
+    background-color: #3792cb;
+    color: white;
+    border-radius: 10%;
+}
+a:hover,button:hover{
+    background-color: #45b6fe;
+    cursor: pointer;
+}
+
+body{
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 625px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+footer{
+    margin-top: 20px;
+    border-top: 1px solid silver ;
+    padding: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: silver;
+    text-align: center;
+}
+header{
+    margin-left: 5%;
+    font-size: 50px;
+    margin-bottom: 6%;
+}
+.container{
+    margin-left: 24%;
+}
+.form{
+    margin-top: 8%;
+}
+.inpText{
+    padding: 1%;
+    width: 40%;
+}
+.inpBtn{
+padding: 1%;
+margin-left: 5px;
+background-color: #3792cb;
+border-radius: 8%;
+color: white;
+text-decoration: none;
+border: none;
+}
