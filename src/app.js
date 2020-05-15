@@ -5,6 +5,9 @@ const hbs=require('hbs')
 //const geoCode=require('./geoCode.js')
 const foreCast=require('./utils/forecast.js')
 
+//setting port on heroku or our local device
+const port=process.env.PORT || 3000
+
 //define paths for express configuration
 const publicDirPath=path.join(__dirname,'../public')
 const viewsPath=path.join(__dirname,'../templates/views')
@@ -37,12 +40,16 @@ app.get('/weather',(req,res)=>{
         else{
             let temp=data.split(",")
             country=temp[1].split(" ")
+            let temp2=temp[0].split(" ")
+            let weatherIcon=temp2[0]
+            //console.log(weatherIcon);
             
             
             res.send({
                 location:address,
-                foreCast:data,
-                country:country[0]
+                foreCast:data.substr(4),
+                country:country[0],
+                weatherIcon:weatherIcon
             })
         }
     })
@@ -60,7 +67,7 @@ app.get('',(req,res)=>{
 //app.com.about
 app.get('/about',(req,res)=>{
     res.render('about',{
-        title:'About Me',
+        title:'',
         name:'Muhammad Ameen'
     })
 })
@@ -107,7 +114,7 @@ app.get('*',(req,res)=>{
 })
 
 //setting upserver on port 3000
-app.listen(3000,()=>{
-console.log('server is up on port 3000')
+app.listen(port,()=>{
+console.log('server is up on port '+port)
 })
 

@@ -1,3 +1,4 @@
+
 h1,h2{
 font-size: 40px;
 margin-left: 5%;
@@ -5,17 +6,18 @@ color:  rgb(6, 6, 36);
 }
 #weatherImg{
     margin-top: 0%;
-    width: 500px;
-    height: 200px;
+    width: 530px;
+    height: 190px;
     
 }
 #MyPic{
-margin: 7%;
+margin-top: 3%;
+margin-left: 6%;
 height: 25%;
 width: 25%;
 
 }
-a{
+.mainLinks{
     margin-left: 2%;
     font-size: larger;
     text-decoration: none;
@@ -35,12 +37,12 @@ body{
     max-width: 625px;
     margin: 0 auto;
     padding: 0 30px;
+    height: 100%;
 }
 footer{
-    margin-top: 20px;
     border-top: 1px solid silver ;
-    padding: 5px;
-    position: fixed;
+    position: absolute;
+    width: 100%;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -70,4 +72,10 @@ border-radius: 8%;
 color: white;
 text-decoration: none;
 border: none;
+
+}
+.aboutImg{
+    margin-top: 0%;
+    width: 400px;
+    height: 150px;
 }

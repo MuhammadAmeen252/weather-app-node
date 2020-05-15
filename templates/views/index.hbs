@@ -2,25 +2,34 @@
 <html>
     <head>
         <title>weather</title>
-        <link rel='stylesheet' href="style.css">
+        <link rel='stylesheet' href="style.css" >
         <link rel="icon" href='logo.png'>
-         
+         <link rel='stylesheet' href="smallStyle.css" >
     </head>
     <body>
         <img src="weather.png" id="weatherImg">
         <div class="container">
         {{>header}}
-        <a href="#">Weather</a> 
-        <a href="about">About</a>
-        <a href="help">Help</a>
+        <a  class="mainLinks" href="#">Weather</a> 
+        <a  class="mainLinks" href="about">About</a>
+        <a  class="mainLinks" href="help">Help</a>
         <p style="margin-bottom: 7%; margin-top:8%">Use this site to get your weather</p>
         <Form class="form">
             <input type="text" name="address" placeholder="location" class="inpText">
             <button class="inpBtn">Search</button>
         </Form>
-        <p id="output-1"></p>
-        <p id="output-2"></p>
+        
+        <div style="display: flex; margin-top: 8px; margin-right: 2%;">
+        <strong><p id="output-2"></p></strong>
         <img id="countryFlag" src="">
+        </div>
+
+        <div style="display: flex;margin-top: 5px;">
+        <p style="margin-top: 5%;" id="output-1"></p>
+        <img id="weatherIcon" src=""> 
+        </div>
+        
+        
         </div>
         {{>footer}}
         <script type='text/javascript' src='app.js'></script>

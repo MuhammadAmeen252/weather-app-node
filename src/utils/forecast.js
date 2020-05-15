@@ -13,7 +13,10 @@ const forecast=(city,callback)=>{
       else {
         let weather=JSON.parse(body)
         if(weather.cod===200){
-          callback(undefined,`Its ${weather.main.temp} degrees in ${weather.name},${weather.sys.country} and it has ${weather.weather[0].description}`)
+          callback(undefined,`${weather.weather[0].icon} Its ${weather.main.temp}°C in ${weather.name},${weather.sys.country} and
+           it feels like ${weather.main.feels_like}°C, it has ${weather.weather[0].description}, \n
+           Minimum temp: ${weather.main.temp_min}°C, Maximum temp: ${weather.main.temp_max}°C , Humidity: ${weather.main.humidity}%
+            Wind: ${weather.wind.speed} meter/sec.`)
         }
         else{
           callback('error: location not found',undefined)

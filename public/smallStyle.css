@@ -1,0 +1,48 @@
+@media screen and (max-width:700px) {
+    #weatherImg{
+        margin-left: 4%;
+        margin-top: 0%;
+        width: 300px;
+        height: 150px;
+    }
+    body{
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    header{
+        margin-left: 1%;
+        font-size: 40px;
+        margin-bottom: 3%;
+    }
+    h1,h2{
+        font-size: 40px;
+        margin-left: 0%;
+        color:  rgb(6, 6, 36);
+        }
+    .container{
+            margin-left: 12%;
+        }
+    #MyPic{
+            margin-top: 3%;
+            margin-left: 6%;
+            height: 30%;
+            width: 30%;
+            
+            }
+    footer{
+        margin-top: 5%;
+        position: static;
+    }
+    .aboutImg{
+        margin-top: 0%;
+        width: 310px;
+        height: 130px;
+    }
+}
+@media (max-height: 40rem){
+    footer{
+        margin-top: 5%;
+        position: static;
+    }
+}

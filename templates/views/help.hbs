@@ -4,15 +4,21 @@
         <title>Help</title>
         <link rel="icon" href='logo.png'>
         <link rel='stylesheet' href="style.css">
+        <link rel='stylesheet' href="smallStyle.css" >
     </head>
     <body>
         <img src="weather.png" id="weatherImg">
         <div class="container">
         {{>header}}
-        <a href="/">Weather</a> 
-        <a href="about">About</a>
-        <a href="#">Help</a>
+        <a  class="mainLinks"  href="/">Weather</a> 
+        <a  class="mainLinks" href="about">About</a>
+        <a  class="mainLinks" href="#">Help</a>
         </div>
+        <p style="margin-top: 10%;  font-size: medium; word-spacing: 10px;">
+            This is simple weather app developed to get the weather of your city using openWeatherAPI.
+             Just type the name of your city to get current weather information.
+            To get the source code of application
+            <a  href="https://github.com/MuhammadAmeen252/weather-app-node"> CLICK HERE</a></p>
         {{>footer}}
     </body>
 </html>
